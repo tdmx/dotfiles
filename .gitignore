@@ -1,0 +1,40 @@
+# NOTE: .gitignore patterns are evaluated in order. Therefore, it's important
+# to be mindful of the order of entries in this file.
+#
+# In particular, these first two lines should always be at the top of this file
+# and in this order.
+#
+# - The first line tells git to ignore all paths.
+# - The second line tells git to make an exception for paths starting with '.'
+# (i.e. dotfiles).
+#
+# These two lines alone clear away most of the unwanted items cluttering the
+# git status output.
+*
+!.*
+
+# Explicitly ignore the .dotfiles git directory
+# Avoid potentially weird recursive issues where .dotfiles tries to track itself.
+.dotfiles/
+
+# Files and directories to ignore as a security precaution
+# Reduce the risk of accidentally committing sensitive or personal information.
+.ssh/
+# NOTE: The only file in .ssh/ that might be worth tracking is ~/.ssh/config,
+# but at the moment I have no need for this. And even for this file it's worth
+# being cautious.
+# !.ssh/config
+
+# History files
+# Usually these are command or event histories of various tools or shells.
+.*_hist*
+.*hst*
+
+# macOS-specific files and directories
+.DS_Store
+.Xauthority
+.CFUserTextEncoding
+.Trash
+
+# Miscellaneous other files and directories
+.emulator_console_auth_token
