@@ -81,6 +81,7 @@ plugins=(
   git
   macos
   vi-mode
+  fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
