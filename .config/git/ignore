@@ -1,0 +1,43 @@
+# Ignore (n)vim-related files
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# vim Sessions
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Persistent undo
+[._]*.un~
+
+# Backup files
+*.bak
+
+# git-related data that should not be committed
+*.patch
+*.diff
+
+# log files
+*.log
+
+# History files, sessions and caches
+# Usually these are command or event histories of various tools or shells.
+.*_hist*
+.*hst*
+.*session*
+.*cache*
+
+# macOS-specific files and directories
+.DS_Store
+.Xauthority
+.CFUserTextEncoding
+.Trash
+
+# Miscellaneous other files and directories
+.emulator_console_auth_token

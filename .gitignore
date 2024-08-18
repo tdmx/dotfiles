@@ -5,13 +5,14 @@
 # and in this order.
 #
 # - The first line tells git to ignore all paths.
-# - The second line tells git to make an exception for paths starting with '.'
-# (i.e. dotfiles).
+# - The second line tells git to make an exception for "hidden" paths (paths starting with '.', i.e. "dotfiles")
+# - The third line ensures that the contents of hidden directories are not ignored
 #
 # These two lines alone clear away most of the unwanted items cluttering the
 # git status output.
 *
 !.*
+!.*/**
 
 # Explicitly ignore the .dotfiles git directory
 # Avoid potentially weird recursive issues where .dotfiles tries to track itself.
@@ -25,10 +26,39 @@
 # being cautious.
 # !.ssh/config
 
-# History files
+# Ignore (n)vim-related files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Persistent undo
+[._]*.un~
+
+# Backup files
+*.bak
+
+# git-related data that should not be committed
+*.patch
+*.diff
+
+# log files
+*.log
+
+# History files, sessions and caches
 # Usually these are command or event histories of various tools or shells.
 .*_hist*
 .*hst*
+.*session*
+.*cache*
 
 # macOS-specific files and directories
 .DS_Store

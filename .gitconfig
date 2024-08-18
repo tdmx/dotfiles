@@ -1,0 +1,6 @@
+[alias]
+	unstage = reset HEAD
+	tree = log --graph --decorate
+[user]
+	name = tdmx
+	email = 51826571+tdmx@users.noreply.github.com
