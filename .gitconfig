@@ -1,6 +1,10 @@
 [alias]
-	unstage = reset HEAD
-	tree = log --graph --decorate
+unstage = reset HEAD
+tree = log --graph --decorate
+d = diff
+ds = diff --staged
+stat = status --short --branch
+
 [user]
-	name = tdmx
-	email = 51826571+tdmx@users.noreply.github.com
+name = tdmx
+email = 51826571+tdmx@users.noreply.github.com
