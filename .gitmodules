@@ -1,0 +1,3 @@
+[submodule ".config/nvim/main"]
+	path = .config/nvim/main
+	url = /Users/TDM/.config/nvim/main

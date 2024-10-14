@@ -18,14 +18,6 @@
 # Avoid potentially weird recursive issues where .dotfiles tries to track itself.
 .dotfiles/
 
-# Files and directories to ignore as a security precaution
-# Reduce the risk of accidentally committing sensitive or personal information.
-.ssh/
-# NOTE: The only file in .ssh/ that might be worth tracking is ~/.ssh/config,
-# but at the moment I have no need for this. And even for this file it's worth
-# being cautious.
-# !.ssh/config
-
 # Ignore (n)vim-related files
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
