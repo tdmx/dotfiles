@@ -1,9 +1,24 @@
 [alias]
+# Index and commit manipulation
+ap = add -p
+up = reset HEAD -p
 unstage = reset HEAD
+cm = commit -m
+ca = commit --amend
+
+# Diffing, statting, etc.
 tree = log --graph --decorate
 d = diff
 ds = diff --staged
-stat = status --short --branch
+s = status --short --branch
+ss = status
+b = branch
+bb = branch --verbose
+
+# Misc
+ce = config --edit
+cge = config --global --edit
+wktr = worktree
 
 [user]
 name = tdmx
